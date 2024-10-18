@@ -56,6 +56,11 @@ header {
     flex-basis: 25%;
 }
 
+.brand-logo img{
+    width: 50%;
+}
+
+
 
 nav {
     display: flex;
@@ -526,6 +531,63 @@ table{
 
 
 
+.footer-first{
+    display: flex;
+    padding: 30px;
+    align-items: flex-start;
+    gap: 50px;
+   
+}
+
+.brand-section{
+    flex-basis: 30%;
+}
+
+
+.quick-link{
+    flex-basis: 55%;
+}
+
+.quick-link h2{
+    margin: 0;
+}
+
+.quick-link ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.quick-link ul li{
+    padding: 5px 0;
+}
+
+.quick-link ul li a{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f4f9;
+    padding: 20px;
+}
+
+.copyright ul{
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+
+.copyright ul li{
+    padding: 0 20px;
+}
+
+.brand-section img{
+    width: 35%;
+}
 
 
 

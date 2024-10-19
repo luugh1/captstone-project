@@ -17,7 +17,7 @@
         <div class="topbar"><span>Promotional Discount 30% on any service</span></div>
         <header id="header">
             <div class="brand-logo">
-                <span>BRANDit</span>
+                <span><img src="assets/images/brands-images/Brandit Logo-01.png"></span>
             </div>
             <nav>
                 <ul>
@@ -52,12 +52,14 @@
                     <source src="assets/video/AdobeStock_921126920_Video_HD_Preview.mov" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <div id="video-play">></div>
+                <div id="video-play">
+                   <span>></span>
+                </div>
             </div>
         </section>
 
         <section class="services">
-            <h1>Service We Offer</h1>
+            <h1>Services We Offer</h1>
             <div class="services-list">
                 <ul>
                     <li class="nav-button" data-target="design">DESIGN</li>
@@ -70,7 +72,7 @@
             <div class="service-option">
                 <div id="design" class="option-s">
                     <div class="service-option-image">
-                        <img src="assets/images/brands-images/AdobeStock_871914257_Preview.jpeg" alt="">
+                        <img src="assets/images/brands-images/brand.png" alt="">
                     </div>
                     <div class="service-option-wrup">
                         <h2>DESIGN SERVICES</h2>
@@ -91,7 +93,9 @@
 
 
                 <div id="development" class="option-s">
-                    <div class="service-option-image"></div>
+                    <div class="service-option-image">
+                        <img alt="" src="assets/images/brands-images/code.png">
+                    </div>
                     <div class="service-option-wrup">
                         <h2>DEVELOPMENT SERVICES</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -111,7 +115,9 @@
 
 
                 <div id="printing" class="option-s">
-                    <div class="service-option-image"></div>
+                    <div class="service-option-image">
+                        <img alt="" src="assets/images/brands-images/development.png">
+                    </div>
                     <div class="service-option-wrup">
                         <h2>PRINTING SERVICES</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -132,7 +138,9 @@
 
 
                 <div id="branding" class="option-s">
-                    <div class="service-option-image"></div>
+                    <div class="service-option-image">
+                        <img alt="" src="assets/images/brands-images/branding.png">
+                    </div>
                     <div class="service-option-wrup">
                         <h2>BRANDING SERVICES</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -156,7 +164,7 @@
             <div class="services-order-writeup">
                 <h2>Service Order</h2>
                 <p>To source the best talents, most companies use the ATS system. Powered by AI algorithms, it
-                    screens applicants’ resumes and helps recruiters find those candidates who perfectly match the
+                    screens applic ants’ resumes and helps recruiters find those candidates who perfectly match the
                     relevant keywords. We will pass your resume
                     through ATS filters and make it rank high among others!</p>
                 <p>We’re set to assist you in tailoring your personal brand and optimizing job search documents that
@@ -556,7 +564,7 @@
 
         // Hide all sections initially, except the first
         sections.forEach(section => section.style.display = 'none');
-        sections[0].style.display = 'block'; // Show the first section
+        sections[0].style.display = 'flex'; // Show the first section
 
         // Set the first button as active
         buttons[0].classList.add('active');
@@ -576,7 +584,7 @@
 
                 // Show the target section
                 if (targetSection) {
-                    targetSection.style.display = 'block';
+                    targetSection.style.display = 'flex';
                 }
 
                 // Add active class to the clicked button

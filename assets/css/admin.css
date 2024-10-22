@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 :root {
   --primary-color: #35403a;
   --secondary-color: #4c594f;
@@ -29,22 +30,34 @@ body {
 }
 
 ul.sidebar-nav {
-  padding: 0 2rem;
 }
 
 .sidebar-nav li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .sidebar-nav li,
 .sidebar-nav li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: inherit;
+  position: relative;
 }
+
 .sidebar-nav li.active {
-  background-color: var(--grey-brand);
+  background-color: var(--primary-color);
   color: var(--color-white);
+}
+
+.sidebar-nav li.active::before {
+  content: "";
+  display: block;
+  border-right: 12px solid var(--color-white);
+  border-bottom: 12px solid transparent;
+  border-top: 12px solid transparent;
+  position: absolute;
+  top: 33.33%;
+  right: -2px;
 }
 
 .sidebar-nav li a {
@@ -54,6 +67,7 @@ ul.sidebar-nav {
 .sidebar-nav i {
   font-size: 1.5rem;
 }
+
 .logo {
   font-family: "Luckiest Guy", cursive;
   height: var(--header-height);
@@ -66,7 +80,7 @@ ul.sidebar-nav {
   color: var(--color-accent);
 }
 
-/ header.main-header {
+header.main-header {
   height: var(--header-height);
 }
 
@@ -84,6 +98,7 @@ ul.sidebar-nav {
   outline: none;
   background: none;
 }
+
 .notification-btn .fa-solid {
   font-size: 1.5rem;
 }
@@ -127,9 +142,11 @@ ul.sidebar-nav {
 .text-color-primary {
   color: var(--primary-color);
 }
+
 .text-color-secondary {
   color: var(--secondary-color);
 }
+
 .text-color-accent {
   color: var(--color-accent);
 }
@@ -138,10 +155,12 @@ ul.sidebar-nav {
   background-color: var(--primary-color);
   color: var(--color-white);
 }
+
 .bg-color-secondary {
   color: var(--color-white);
   background-color: var(--secondary-color);
 }
+
 .bg-color-accent {
   color: var(--color-white);
   background-color: var(--color-accent);
@@ -154,6 +173,7 @@ ul.sidebar-nav {
 .label-value-change-indicator-down {
   color: red;
 }
+
 .label-value-change-indicator-up {
   color: green;
 }
@@ -170,4 +190,37 @@ footer {
   height: var(--header-height);
   background-color: var(--primary-color);
   color: var(--color-white);
+}
+
+/* Scroll nicely */
+
+*,
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* Highlight */
+
+.row,
+div[class^="col"].highlight {
+  position: relative;
+}
+
+.row.highlight::before,
+div[class^="col"].highlight::before {
+  content: "";
+  font-size: 4rem;
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  display: block;
+  height: calc(100% + 10px);
+  width: 100%;
+  position: absolute;
+  background-color: yellow;
+top: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0.1;
+  transition: all 5s;
 }

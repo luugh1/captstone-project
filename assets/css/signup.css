@@ -23,8 +23,8 @@ body {
 }
 
 body {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../images/background/1.jpg");
-    background-position: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8)), url("../images/background/1.jpg");
+    background-position: left top;
     background-size: contain;
 }
 
@@ -32,8 +32,9 @@ body {
 
     display: flex;
     justify-content: center;
-    height: calc(100% - var(--header-height));
+    min-height: calc(100% - var(--header-height));
     align-items: center;
+    flex-direction: column;
     margin-top: 50px;
 }
 
@@ -140,12 +141,12 @@ body {
 
 .new_people h4 {
     font-size: 2em;
-    color: #00ACED;
+    color: var(--secondary-color);
     margin: 0;
 }
 
 .new_people p {
-    color: #999;
+    color: var(--grey-brand);
     margin: 1em 0 2em;
     font-size: 14px;
     line-height: 1.8em;
@@ -153,15 +154,16 @@ body {
 
 .new_people a {
     padding: 12px 30px;
-    border: 1px solid #00ACED;
-    color: #00ACED;
+    border: 1px solid var(--secondary-color);
+    color: var(--primary-color);
     text-decoration: none;
     font-size: 1em;
+    display: block;
 }
 
 .new_people a:hover {
-    color: #F44336;
-    border: 1px solid #F44336;
+    color: var(--grey-brand);
+    
 }
 
 .sign-in-form-top {
@@ -171,8 +173,13 @@ body {
     text-align: center;
     background-size: cover;
     position: relative;
-    background-image: linear-gradient(to right, rgba(53, 64, 58, 0.4), var(--primary-color)), url(../images/background/3.jpg);
+    font-weight: 900;
+    background-image: linear-gradient(to right, rgba(53, 64, 58, 0.1), rgba(255, 99, 71, 0.4)), url(../images/background/3.jpg);
 
+}
+
+.sign-in-form-top p:first-of-type {
+    font-weight: 900;
 }
 
 .sign-in-top-wrapper {
@@ -198,6 +205,16 @@ body {
     font-size: 2em;
     font-weight: 300;
     text-decoration: none;
+}
+
+button.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+}
+
+button.submit-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--color-white);
 }
 
 @media only screen and (max-width: 700px) {

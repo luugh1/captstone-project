@@ -23,19 +23,19 @@ body {
 }
 
 body {
-  background-image: linear-gradient(rgba(255,255, 255,0.8
-  ), rgba(255,255, 255,0.8
-  )), url("../images/background/1.jpg");
-  background-position: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8)), url("../images/background/1.jpg");
+  background-position: left top;
   background-size: contain;
 }
 
 .page-wrapper {
-  
+
   display: flex;
   justify-content: center;
-  height: calc(100% - var(--header-height));
+  min-height: calc(100% - var(--header-height));
   align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 
@@ -85,6 +85,7 @@ body {
 .new-people {
   margin: 5em 0 0;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .new-people h3 {
@@ -124,8 +125,8 @@ body {
 
 
 .sign-in-form {
-height: calc(100% - var(--header-height));
-  width: 40vw;
+  min-height: calc(100% - var(--header-height));
+  width: 60vw;
 }
 
 .sign-in-wrapper {
@@ -135,16 +136,17 @@ height: calc(100% - var(--header-height));
 .new_people {
   padding: 3em 0 0;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .new_people h4 {
   font-size: 2em;
-  color: #00ACED;
+  color: var(--secondary-color);
   margin: 0;
 }
 
 .new_people p {
-  color: #999;
+  color: var(--grey-brand);
   margin: 1em 0 2em;
   font-size: 14px;
   line-height: 1.8em;
@@ -152,15 +154,16 @@ height: calc(100% - var(--header-height));
 
 .new_people a {
   padding: 12px 30px;
-  border: 1px solid #00ACED;
-  color: #00ACED;
+  border: 1px solid var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 1em;
+  display: block;
 }
 
 .new_people a:hover {
-  color: #F44336;
-  border: 1px solid #F44336;
+  color: var(--grey-brand);
+
 }
 
 .sign-in-form-top {
@@ -170,8 +173,13 @@ height: calc(100% - var(--header-height));
   text-align: center;
   background-size: cover;
   position: relative;
-  background-image: linear-gradient(to right, rgba(53, 64, 58, 0.4), var(--primary-color)), url(../images/background/3.jpg);
+  font-weight: 900;
+  background-image: linear-gradient(to right, rgba(53, 64, 58, 0.1), rgba(255, 99, 71, 0.4)), url(../images/background/3.jpg);
 
+}
+
+.sign-in-form-top p:first-of-type {
+  font-weight: 900;
 }
 
 .sign-in-top-wrapper {
@@ -199,15 +207,25 @@ height: calc(100% - var(--header-height));
   text-decoration: none;
 }
 
+button.submit-btn {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+}
+
+button.submit-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--color-white);
+}
+
 @media only screen and (max-width: 700px) {
-.sign-in-form {
+  .sign-in-form {
     width: 80vw;
   }
 }
 
 @media only screen and (min-width: 1100px) {
   .sign-in-form {
-    width: 30vw;
+    width: 60vw;
   }
 }
 
@@ -215,4 +233,50 @@ footer {
   background-color: var(--primary-color);
   height: var(--header-height);
   color: var(--color-white);
+}
+
+
+.box {
+  width: 60vmin;
+  height: 50vmin;
+  display: grid;
+  place-content: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(from var(--border-angle),
+      #213,
+      #112 5%,
+      #112 60%,
+      #213 95%);
+  border: solid 5px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+  background-position: center center;
+  -webkit-animation: bg-spin 3s linear infinite;
+  animation: bg-spin 3s linear infinite;
+}
+
+@-webkit-keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+.box:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }

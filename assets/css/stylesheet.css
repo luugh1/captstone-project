@@ -7,7 +7,6 @@
     --primary: #0D2F44;
     --secondary: #FCA311;
     --blue: #f7f7f7;
-    ;
     --white: #FFFFFF;
     --black: #000000;
     --mt: 20px;
@@ -37,7 +36,7 @@ body {
 
 header {
     display: flex;
-    padding: 0px 8%;
+    padding: 10px 8%;
     position: sticky;
     top: 0;
     z-index: 500;
@@ -56,6 +55,11 @@ header {
     flex-basis: 25%;
 }
 
+.brand-logo img{
+    width: 50%;
+}
+
+
 
 nav {
     display: flex;
@@ -67,6 +71,7 @@ nav ul li a {
     text-decoration: none;
     color: var(--black);
     font-weight: 500;
+    font-size: 18px;
 }
 
 nav li {
@@ -80,15 +85,16 @@ nav li {
     padding: 9px 15px;
     border-radius: 5px;
     font-weight: 510;
+    
 }
 
 /* hero section */
 
 .hero {
     display: flex;
-    margin: 130px 8%;
+    margin: 140px  8%  0 8%;
     gap: 2%;
-    height: 70vh;
+    min-height: 60vh;
 }
 
 .hero-detail {
@@ -109,6 +115,12 @@ nav li {
     color: var(--secondary);
 }
 
+.hero-detail p{
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
 .tm {
     font-weight: 900;
     font-size: 20px;
@@ -117,7 +129,6 @@ nav li {
 
 .hero-video {
     flex-basis: 43%;
-    /* background-color: black; */
     padding: 20px;
     position: relative;
 }
@@ -127,7 +138,11 @@ nav li {
     width: 100%;
 }
 
-.hero-video div {
+.video-play{
+    
+}
+
+.hero-video span{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -147,10 +162,6 @@ nav li {
     cursor: pointer;
 }
 
-.hero-detail p {
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
 
 .starter-btn {
     margin-top: 30px;
@@ -212,11 +223,50 @@ nav li {
     display: none;
     transition: opacity 0.5s ease, max-height 0.5s ease;
     background-color: var(--blue);
-    padding: 20px;
     width: 70%;
     margin: 0 auto;
+    padding: 20px;
     border-radius: 7px;
     display: flex;
+    height: 450px;
+}
+
+.service-option-image{
+    flex-basis: 45%;
+    position: relative;
+}
+
+
+
+#design .service-option-image img, #development .service-option-image img{
+    width: 500px;
+    position: absolute;
+    left: -170px;
+    top: -30px;
+    
+}
+
+#branding .service-option-image img {
+    width: 390px;
+    position: absolute;
+    left: -80px;
+    top: -10px;
+}
+
+
+
+#printing .service-option-image img{
+    width: 450px;
+    position: absolute;
+    left: -120px;
+    top: -30px;
+}
+/* #design .service-option-image img {
+    height: 365px;
+} */
+
+.service-option-wrup{
+    flex-basis: 55%;  
 }
 
 .nav-button:hover {
@@ -232,7 +282,7 @@ nav li {
 }
 
 .option-s:first-of-type {
-    display: block;
+    display: flex;
 }
 
 .reviews-wrapper {
@@ -526,6 +576,63 @@ table{
 
 
 
+.footer-first{
+    display: flex;
+    padding: 30px;
+    align-items: flex-start;
+    gap: 50px;
+   
+}
+
+.brand-section{
+    flex-basis: 30%;
+}
+
+
+.quick-link{
+    flex-basis: 55%;
+}
+
+.quick-link h2{
+    margin: 0;
+}
+
+.quick-link ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.quick-link ul li{
+    padding: 5px 0;
+}
+
+.quick-link ul li a{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f4f9;
+    padding: 20px;
+}
+
+.copyright ul{
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+
+.copyright ul li{
+    padding: 0 20px;
+}
+
+.brand-section img{
+    width: 35%;
+}
 
 
 

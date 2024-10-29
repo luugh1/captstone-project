@@ -5,7 +5,7 @@
         --secondary-color: #4c594f;
         --grey-brand: #bfbfb8;
         --color-white: #f6f6f6;
-        --color-accent: tomato;
+        --color-accent: rgb(255, 99, 71);
         --header-height: 4rem;
 }
 
@@ -83,15 +83,38 @@ label span  {
 }
 
 .contact-method {
-    background-image: linear-gradient(var(--grey-brand), var(--secondary-color)) ;
     color: var(--color-white);
     min-height: 215px;
+    text-shadow:  2px 1px rgba(0, 0, 0, 0.3);
+    font-size: 500;
 }
 
 .contact-method p:first-child {
-    color: var(--primary-color);
-    font-size: 1.5rem;
+    
 }
+
+.contact-method.visit {
+    background-image: linear-gradient(rgba(191,  191,  184, 0.5), var(--secondary-color)),url("../images/general/visit.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contact-method.fax {
+    background-image: linear-gradient(rgba(191, 191, 184, 0.5), var(--secondary-color)), url("../images/general/fax.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contact-method.email {
+    background-image: linear-gradient(rgba(191, 191, 184, 0.5), var(--secondary-color)), url("../images/general/email-campaign.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
 
 
 

@@ -3,7 +3,7 @@
     --secondary-color: #4c594f;
     --grey-brand: #bfbfb8;
     --color-white: #f6f6f6;
-    --color-accent: tomato;
+    --color-accent: #ff6347;
     --header-height: 4rem;
 }
 
@@ -137,6 +137,9 @@ body {
     padding: 3em 0 0;
     text-align: center;
     margin-bottom: 50px;
+    background-color: #f9f9f9;
+    margin-top: 24px;
+    padding-bottom: 10px;
 }
 
 .new_people h4 {

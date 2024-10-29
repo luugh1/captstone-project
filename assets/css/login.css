@@ -23,9 +23,9 @@ body {
 }
 
 body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8)), url("../images/background/1.jpg");
+ /*  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8)), url("../images/background/1.jpg");
   background-position: left top;
-  background-size: contain;
+  background-size: contain; */
 }
 
 .page-wrapper {
@@ -86,6 +86,7 @@ body {
   margin: 5em 0 0;
   text-align: center;
   margin-bottom: 50px;
+  background-color: #f6f6;
 }
 
 .new-people h3 {
@@ -126,7 +127,7 @@ body {
 
 .sign-in-form {
   min-height: calc(100% - var(--header-height));
-  width: 60vw;
+  width: 40vw;
 }
 
 .sign-in-wrapper {
@@ -137,6 +138,9 @@ body {
   padding: 3em 0 0;
   text-align: center;
   margin-bottom: 50px;
+  background-color: #f9f9f9;
+  margin-top: 24px;
+  padding-bottom: 10px;
 }
 
 .new_people h4 {
@@ -225,7 +229,7 @@ button.submit-btn:hover {
 
 @media only screen and (min-width: 1100px) {
   .sign-in-form {
-    width: 60vw;
+    width: 35vw;
   }
 }
 

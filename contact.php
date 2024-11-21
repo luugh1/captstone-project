@@ -17,7 +17,7 @@
 
 </head>
 
-<header></header>
+<?php require_once("component/header.php"); ?>
 
 <main class="container-fluid">
     <section class="row mb-5">
@@ -141,10 +141,4 @@
 
 </main>
 
-<body>
-
-
-
-</body>
-
-</html>
+<?php include_once("component/footer.php"); ?>

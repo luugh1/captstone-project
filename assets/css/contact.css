@@ -1,56 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 :root {
-    --primary-color: #35403a;
-        --secondary-color: #4c594f;
-        --grey-brand: #bfbfb8;
-        --color-white: #f6f6f6;
-        --color-accent: rgb(255, 99, 71);
-        --header-height: 4rem;
+  --primary-color: #35403a;
+  --secondary-color: #4c594f;
+  --grey-brand: #bfbfb8;
+  --color-white: #f6f6f6;
+  --color-accent: rgb(255, 99, 71);
+  --header-height: 4rem;
 }
 
-
 body {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
-    height: var(--header-height);
-    border-bottom: 1px solid #eee;
+  height: var(--header-height);
+  border-bottom: 1px solid #eee;
 }
 
 .top-heading {
-    height: 30vh;
-    background-image: linear-gradient(to right, rgba(76, 89, 79, 0.8), rgba(53, 64, 58, 1)), url("../images/background/contact-support.webp");
-    background-size: contain;
-    background-position: left top;
-    background-repeat: no-repeat;
+  height: 30vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(76, 89, 79, 0.8),
+      rgba(53, 64, 58, 1)
+    ),
+    url("../images/background/contact-support.webp");
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
 }
 
 h2 {
-    text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
+    0 0 3px rgba(255, 255, 255, 0.3);
 }
 
 .welcome-text-container {
-    color: #e5e5e5;
-    font-size: 2.26rem;
-    text-transform: uppercase;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .animation {
-    height: 50px;
-   overflow: hidden;
-
+  height: 50px;
+  overflow: hidden;
 }
 
-.animation>div>p {
-    padding: 0rem 0.75rem;
-    height: 2.81rem;
-    margin-bottom: 2.81rem;
-    display: inline-block;
+.animation > div > p {
+  padding: 0rem 0.75rem;
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
 }
 
 .animation div:first-child {
@@ -58,122 +62,135 @@ h2 {
 }
 
 .first p {
-    background-color: #20a7d8;
+  background-color: #20a7d8;
 }
 
 .second p {
-    background-color: #CD921E;
+  background-color: #cd921e;
 }
 
-.third p{
-    background-color: #c10528;
+.third p {
+  background-color: #c10528;
 }
 
-label span  {
-    color: #c10528;
+label span {
+  color: #c10528;
 }
 
 .submit-btn {
-    background-color: var(--primary-color);
-    color: var(--color-white);
+  background-color: var(--primary-color);
+  color: var(--color-white);
 }
 
 .subtitle {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .contact-method {
-    color: var(--color-white);
-    min-height: 215px;
-    text-shadow:  2px 1px rgba(0, 0, 0, 0.3);
-    font-size: 500;
+  color: var(--color-white);
+  min-height: 215px;
+  text-shadow: 2px 1px rgba(0, 0, 0, 0.3);
+  font-size: 500;
 }
 
 .contact-method p:first-child {
-    
 }
 
 .contact-method.visit {
-    background-image: linear-gradient(rgba(191,  191,  184, 0.5), var(--secondary-color)),url("../images/general/visit.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(191, 191, 184, 0.5),
+      var(--secondary-color)
+    ),
+    url("../images/general/visit.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .contact-method.fax {
-    background-image: linear-gradient(rgba(191, 191, 184, 0.5), var(--secondary-color)), url("../images/general/fax.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(191, 191, 184, 0.5),
+      var(--secondary-color)
+    ),
+    url("../images/general/fax.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .contact-method.email {
-    background-image: linear-gradient(rgba(191, 191, 184, 0.5), var(--secondary-color)), url("../images/general/email-campaign.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(191, 191, 184, 0.5),
+      var(--secondary-color)
+    ),
+    url("../images/general/email-campaign.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
+.faq-summary {
+  color: #f1f1f1;
+  padding: 0.5em;
+  background: var(--primary-color);
+}
 
-
-
-
-
-
-
-
-
-
-
+.faq-content {
+  padding: 0.5em;
+  background-color: #f1f1f1;
+}
+.faq-details {
+  margin-bottom: 0.1rem;
+}
 
 @keyframes text-animation {
-    0% {
-        margin-top: 0;
-    }
+  0% {
+    margin-top: 0;
+  }
 
-    10% {
-        margin-top: 0;
-    }
+  10% {
+    margin-top: 0;
+  }
 
-    20% {
-        margin-top: -5.62rem;
-    }
+  20% {
+    margin-top: -5.62rem;
+  }
 
-    30% {
-        margin-top: -5.62rem;
-    }
+  30% {
+    margin-top: -5.62rem;
+  }
 
-    40% {
-        margin-top: -11.24rem;
-    }
+  40% {
+    margin-top: -11.24rem;
+  }
 
-    60% {
-        margin-top: -11.24rem;
-    }
+  60% {
+    margin-top: -11.24rem;
+  }
 
-    70% {
-        margin-top: -5.62rem;
-    }
+  70% {
+    margin-top: -5.62rem;
+  }
 
-    80% {
-        margin-top: -5.62rem;
-    }
+  80% {
+    margin-top: -5.62rem;
+  }
 
-    90% {
-        margin-top: 0;
-    }
+  90% {
+    margin-top: 0;
+  }
 
-    100% {
-        margin-top: 0;
-    }
+  100% {
+    margin-top: 0;
+  }
 }
 
 @keyframes shad-anim {
-    0% {
-        background-position: 0 0
-    }
+  0% {
+    background-position: 0 0;
+  }
 
-    0% {
-        background-position: 100% -100%
-    }
+  0% {
+    background-position: 100% -100%;
+  }
 }

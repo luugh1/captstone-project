@@ -1,41 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php require_once("component/header.php"); ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css"
-        integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/stylesheet.css">
-    <title>Home | Brandit</title>
-</head>
-
-<body>
-    <div class="wrapper">
-        <div class="topbar"><span>Promotional Discount 30% on any service</span></div>
-        <header id="header">
-            <div class="brand-logo">
-                <span><img src="assets/images/brands-images/Brandit Logo-01.png"></span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="./">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="./contact.html">Contact us</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="./admin.html">admin</a></li>
-                </ul>
-
-                <ul class="membership">
-                    <li><a href="./sign-up.html">Register</a></li>
-                    <li><a href="./login.html">Login</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section class="hero">
+        <section class="hero-home">
             <div class="hero-detail">
                 <h3>Mega Development and Branding</h3>
                 <h1>We Design, We Develop
@@ -60,7 +25,7 @@
                     Your browser does not support the video tag.
                 </video>
                 <div id="video-play">
-                    <span class="material-icons">
+                    <span id="openModal" class="material-icons">
                         play_arrow
                     </span>
                 </div>
@@ -97,7 +62,7 @@
                                 elevate your brand's messaging and identity.</li>
                         </ul>
 
-                        <button>MAKE REQUEST</button>
+                        <a href="services.html#design-service" class="sta">MAKE REQUEST</a>
                     </div>
                 </div>
 
@@ -119,7 +84,7 @@
                                 your business evolves.</li>
                         </ul>
 
-                        <button>MAKE REQUEST</button>
+                        <a href="services.html#application-development" class="sta">MAKE REQUEST</a>
                     </div>
                 </div>
 
@@ -140,7 +105,7 @@
                                 consistently.</li>
                         </ul>
 
-                        <button>MAKE REQUEST</button>
+                        <a href="services.html#business-branding" class="sta">MAKE REQUEST</a>
                     </div>
                 </div>
             </div>
@@ -148,7 +113,7 @@
 
         <section class="services-order">
             <div class="services-order-writeup">
-                <h2>Service Order</h2>
+                <h2>Companies We've <br/>Worked With</h2>
                 <p>To stay competitive, companies rely on streamlined digital solutions to enhance their brand presence
                     and optimize online user experiences. Our expertise in design, branding, and web development
                     leverages cutting-edge technology to create visually captivating, user-friendly, and high-performing
@@ -174,60 +139,39 @@
                             </div>
                         </li>
                         <li class="splide__slide">
-                            <div class="second_project"></divclass>>
-                                <h2>Networking Professional</h2>
-                                <p>All you need to apply to jobs, including a resume and cover letter.</p>
-                                <h3>Resume written by a (CPRW) Specialist</h3>
-                                <h3>ATS Compliant For HR Systems</h3>
-                                <h3>Modern design template in PDF and DOCX files</h3>
-                                <h3>Cover Letter - Employers are 40% more likely to read a resume with a cover
-                                    letter</h3>
-                                <h3>60-day interview guarantee</h3>
-                                <h3 class="fade-02">LinkedIn Makeover - 97% of employers use LinkedIn; we'll rewrite
-                                    your profile</h3>
-                                <h3 class="fade-02">Professional Brand Online Resume</h3>
-                                <h3 class="fade-02">Resume Mastery Guide</h3>
+                            <div class="second_project">
+                                <div class="company-logo">
+                                <img src="assets/images/client-logo/1.png" alt="client-logo cogentresume">
+                                <h3>Papa Johns</h3>
+                             </div>
 
-                                <h5 class="amount">$299</h5>
-                                <button>Order Now</button>
+                             <div class="job--done">
+                                   Business Graphics
+                             </div>
                             </div>
                         </li>
                         <li class="splide__slide">
                             <div class="third_project">
-                                <h2>Career Launch Kit</h2>
-                                <p>An expertly written keyword-optimized resume that sets you apart.</p>
-                                <h3>Resume written by a (CPRW) Specialist</h3>
-                                <h3>ATS Compliant For HR Systems</h3>
-                                <h3>Modern design template in PDF and DOCX files</h3>
-                                <h3>Cover Letter - Employers are 40% more likely to read a resume with a cover
-                                    letter</h3>
-                                <h3>60-day interview guarantee</h3>
-                                <h3>LinkedIn Makeover - 97% of employers use LinkedIn; we'll rewrite your profile
-                                </h3>
-                                <h3 class="fade-02">Professional Brand Online Resume</h3>
-                                <h3 class="fade-02">Resume Mastery Guide</h3>
-
-                                <h5 class="amount">$399</h5>
-                                <button>Order Now</button>
+                                <div class="company-logo">
+                                    <img src="assets/images/client-logo/2.png" alt="client-logo cogentresume">
+                                    <h3>Oscar Civit</h3>
+                                 </div>
+  
+                                 <div class="job--done">
+                                      Website Connectivity
+                                 </div>
                             </div>
                         </li>
                         <li class="splide__slide">
                             <div class="forth_project">
-                                <h2>Executive Personal Branding</h2>
-                                <p>An expertly written keyword-optimized resume that sets you apart.</p>
-                                <h3>Resume written by a (CPRW) Specialist</h3>
-                                <h3>ATS Compliant For HR Systems</h3>
-                                <h3>Modern design template in PDF and DOCX files</h3>
-                                <h3>Cover Letter - Employers are 40% more likely to read a resume with a cover
-                                    letter</h3>
-                                <h3>60-day interview guarantee</h3>
-                                <h3>LinkedIn Makeover - 97% of employers use LinkedIn; we'll rewrite your profile
-                                </h3>
-                                <h3>Professional Brand Online Resume</h3>
-                                <h3>Resume Mastery Guide</h3>
-
-                                <h5 class="amount">$499</h5>
-                                <button>Order Now</button>
+                                <div class="company-logo">
+                                    <img src="assets/images/client-logo/3.png" alt="client-logo cogentresume">
+                                    <h3>Garp and Fuss</h3>
+                                 </div>
+  
+                                 <div class="job--done">
+                                      Website Security
+                                 </div>
                             </div>
                         </li>
                     </ul>
@@ -349,7 +293,7 @@
         <section class="extra-content">
             <div class="ce-writeup">
                 <h1>AFFORDABLE, FLEXIBLE AND BUILT FOR SUCCESS</h1>
-                <a class="startedBtn">REQUEST OUR SERVICES</a>
+                <a class="startedBtn">REQUEST OUR SERVICES TODAY</a>
             </div>
             <div class="ec-divs">
                 <div class="ec-divs-1">
@@ -362,7 +306,9 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat cum autem?
                         Optio odio vel ipsa reiciendis dolores
                         quos itaque veniam sit, ut, illum maiores?</p>
-                </div>
+                
+                        <button  class="startedBtn">Order Services</button>
+                    </div>
                 <div class="ec-divs-2">
                     <h2>PLATFORM FOR SUCCESS</h2>
                     <div class="ec-divs-2-writeup">
@@ -373,7 +319,7 @@
                         </ul>
 
                         <div class="ec-divs-2-image">
-                            <img src="" alt="ad-image">
+                            <img src="assets/images/brands-images/assurance.png" alt="ad-image">
                         </div>
                     </div>
                 </div>
@@ -417,6 +363,10 @@
                                 <td><input type="text" id="lastname" placeholder="Last Name" class="form-control"></td>
                             </tr>
 
+                            <tr>
+                                <td><span class="text-danger">field is required</span></td>
+                                <td><span class="text-danger">field is required</span></td>
+                            </tr>
 
                             <tr>
                                 <td colspan="2"><input type="text" id="companyname" placeholder="Company Name"
@@ -430,127 +380,34 @@
                             </tr>
 
                             <tr>
+                                <td><span class="text-danger">field is required</span></td>
+                                <td><span class="text-danger">field is required</span></td>
+                            </tr>
+
+                            <tr>
                                 <td colspan="2">
-                                    <textarea></textarea>
+                                    <textarea placeholder="Enter your message here..."></textarea>
                                 </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" class="text-danger">Message sent successfully</td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td colspan="2" class="text-center">Message sent successfully</td>
                             </tr>
 
                             <tr>
                                 <td colspan="2"><button class="startedBtn">LET'S GO</button></td>
                             </tr>
 
-                            <tr>
-                                <td colspan="2">Message sent successfully</td>
-                            </tr>
                         </table>
                     </form>
                 </div>
             </div>
         </section>
 
-        <footer>
-            <div class="footer-first">
-                <div class="brand-section">
-                    <span><img src="assets/images/brands-images/Brandit Logo-01.png" alt="company logo"></span>
-                    <p>Lorem ipsum dolor assumenda, odio, ex
-                        laborum ab repellendus consectetur cum vitae!</p>
-                    <div class="social-icons">
-                        1,2,3,4,5
-                    </div>
-
-                    <a href="">Contact us</a>
-                </div>
-
-                <div class="quick-link">
-                    <h2>Quick Link</h2>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Register</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="copyright">
-                <div>Copyright &copy; 2024, </div>
-
-                <ul>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Term</a></li>
-                    <li><a href="#">Condition</a></li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script>
-    window.addEventListener('scroll', function () {
-        const header = document.getElementById('header');
-        const scrollY = window.scrollY;
-
-        // Change header color based on scroll position
-        if (scrollY > 50) {
-            header.classList.add("header-style");
-        } else {
-            header.classList.remove("header-style");
-        }
-    });
-
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const sections = document.querySelectorAll('.option-s');
-        const buttons = document.querySelectorAll('.nav-button');
-
-        // Hide all sections initially, except the first
-        sections.forEach(section => section.style.display = 'none');
-        sections[0].style.display = 'flex'; // Show the first section
-
-        // Set the first button as active
-        buttons[0].classList.add('active');
-
-        // Add click event listeners to the buttons
-        buttons.forEach(button => {
-            button.addEventListener('click', function (event) {
-                event.preventDefault(); // Prevent default action
-                const targetId = this.getAttribute('data-target');
-                const targetSection = document.getElementById(targetId);
-
-                // Hide all sections
-                sections.forEach(section => section.style.display = 'none');
-
-                // Remove active class from all buttons
-                buttons.forEach(btn => btn.classList.remove('active'));
-
-                // Show the target section
-                if (targetSection) {
-                    targetSection.style.display = 'flex';
-                }
-
-                // Add active class to the clicked button
-                this.classList.add('active');
-            });
-        });
-    });
-
-</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
-    integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- Initialize Swiper -->
-<script>
-    var splide = new Splide('.splide', {
-        type: 'loop',
-        padding: '5rem',
-    });
-
-    splide.mount();
-</script>
-
-</html>
+        <?php include_once("component/footer.php"); ?>
+        <script src="./assets/js/home-script.js"></script>

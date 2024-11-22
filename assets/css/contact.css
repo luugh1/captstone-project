@@ -20,7 +20,7 @@ header {
 }
 
 .top-heading {
-    height: 30vh;
+    height: 40vh;
     background-image: linear-gradient(to right, rgba(76, 89, 79, 0.8), rgba(53, 64, 58, 1)), url("../images/background/contact-support.webp");
     background-size: contain;
     background-position: left top;

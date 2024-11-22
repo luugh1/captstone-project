@@ -20,6 +20,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body class="sign-in-up">
+<?php require_once("component/header.php"); ?>
 	<section class="page-wrapper">
 		<h1>Welcome 👋to BranDit</h1>
 		<p>Let's build together</p>
@@ -72,9 +73,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	</section>
 
-	<footer>
-		<p>Copyright &copy; 2024.BranDit All rights reserved.</p>
-	</footer>
+	<?php include_once("component/footer.php"); ?>
+
 	<script src="./assets/js/backgrounds/three.min.js"></script>
 
 	<script src="./assets/js/backgrounds/vanta.birds.min.js"></script>
@@ -98,6 +98,3 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			backgroundAlpha: 0.38
 		})
 	</script>
-</body>
-
-</html>

@@ -1,0 +1,139 @@
+
+
+.hero-services{
+    height: 40vh;
+    background-image: url(../images/brands-images/assurance.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding: 30px 8%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.hero-services div{
+    flex-basis: 50%;
+}
+
+.service-design{
+    margin: 50px auto;
+    width: 80%;
+}
+
+.card-wrapper{
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: -webkit-fit-content;
+    min-height: fit-content;
+    max-width: 100%;
+    display: flex;
+    gap: 25px;
+}
+
+.service-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    max-width: 100%;
+    transition-duration: inherit;
+    padding: 30px;
+    justify-content: flex-start;
+    border: 8px solid transparent;
+    color: #111111;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+
+.bestpurchase{
+    border:2px solid #db545a;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.4);
+    padding: 30px;
+}
+
+
+.service-card button{
+  background-color: #111111;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  font-size: 21px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+
+.service-list{
+    padding: 0 0 20px 0;
+}
+
+
+.service-list ul{
+    list-style: none;
+    padding: 0;
+}
+
+.service-list ul li{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.verified{
+    color: forestgreen;
+ }
+
+ .unverified{
+    color: rgb(193, 20, 20);
+ }
+
+ .favorite{
+   display: flex; 
+   align-items: center;
+   gap: 10px;
+ }
+
+
+ .favorite span{
+    color: #db545a;
+    border: 2px solid;
+    padding: 3px;
+    border-radius: 50%;
+    font-size: 12px;
+ }
+
+.service-list ul li > span:nth-child(2){
+   font-size: 21px;
+}
+
+/* divider style */
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #555;
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid;
+    margin: 0 10px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+  }
+  
+  .divider span {
+    font-size: 1.5em;
+    color: #ff7e5f;
+    padding: 0 10px;
+  }
+  

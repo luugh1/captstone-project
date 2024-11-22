@@ -16,7 +16,6 @@ body {
     height: 100%;
     font-family: 'Cabin', sans-serif;
     font-size: 100%;
-    overflow-x: hidden;
     background: #f9f9f9;
     margin: 0;
     padding: 0;
@@ -222,8 +221,8 @@ button.submit-btn:hover {
     }
 }
 
-footer {
+/* footer {
     background-color: var(--primary-color);
     height: var(--header-height);
     color: var(--color-white);
-}
+} */

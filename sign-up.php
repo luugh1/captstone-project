@@ -21,7 +21,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body class="sign-in-up">
 <?php require_once("component/header.php"); ?>
-  <section class="page-wrapper">
+  <section class="page-wrapper" style="overflow: hidden">
     <h1>Welcome 👋to BranDit</h1>
     <p>Let's build together</p>
     <div class="sign-in-form">

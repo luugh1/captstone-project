@@ -44,16 +44,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           </a>
         </li>
         <li class="sidebar-nav-item p-2">
-          <a class="sidebar-nav-link-text" aria-current="page" href="#messages">
+          <a class="sidebar-nav-link-text" aria-current="page" href="#inquiries">
             <span><i class="fa-solid fa-envelope"></i></span>
-            <span>Messages</span>
+            <span>Inquiries</span>
           </a>
         </li>
         <li class="sidebar-nav-item nav-item p-2">
-          <a class="sidebar-nav-link-text nav-link active" aria-current="page" href="#compose-a-message">
+          <a class="sidebar-nav-link-text nav-link active" aria-current="page" href="#feedback">
             <span><i class="fa-solid fa-comments"></i></span>
-            <span>Compose a
-              message</span>
+            <span>Feedback</span>
           </a>
         </li>
         <li class="sidebar-nav-item p-2">
@@ -344,10 +343,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- Inbox starts here -->
 
         <section class="row mt-5 mb-5">
-          <div class="col-md-8" id="messages">
+          <div class="col-12" id="inquiries">
             <div class="mailbox-content card">
               <div class="card-body">
-                <h6 class="card-title">Messages</h6>
+                <h6 class="card-title">Inquiries</h6>
                 <div class=" d-flex">
                   <div class="sms-dropdown dropdown d-flex">
                     <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -583,28 +582,245 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               </div>
             </div>
           </div>
-          <div class="col-md-4" id="compose-a-message">
-            <div class="Compose-Message card">
+        </section>
+
+        <section class="row mt-5 mb-5">
+           <div class="col-12" id="feedback">
+            <div class="mailbox-content card">
               <div class="card-body">
-                <h6 class="card-title">Compose New Message</h6>
-                <div class="">
-                  <div class="alert alert-info">
-                    Please fill details to send a new message
-                  </div>
-                  <form class="d-flex flex-column">
-                    <hr />
-                    <label class="form-label">Enter Recipient Name : </label>
-                    <input type="text" class="form-control control3" />
-                    <label class="form-label">Enter Subject : </label>
-                    <input type="text" class="form-control control3" />
-                    <label class="form-label">Enter Message : </label>
-                    <textarea rows="6" class="form-control control2"></textarea>
-                    <hr />
-                    <button class="btn btn-primary btn-sm" style="width: 80px" type="button">
-                      Send
+                <h6 class="card-title">Feedback</h6>
+                <div class=" d-flex">
+                  <div class="sms-dropdown dropdown d-flex">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-folder"></i>
+                      <span>Action</span>
                     </button>
-                  </form>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="sms-dropdown dropdown">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-folder"></i>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+                <hr />
+                <table class="table table-fhr">
+                  <tbody>
+                    <tr class="unread checked">
+                      <td class="hidden-xs">
+                        <input type="checkbox" class="checkbox" />
+                      </td>
+                      <td class="hidden-xs">
+                        <i class="fa-regular fa-star"></i>
+                      </td>
+                      <td class="hidden-xs">Google</td>
+                      <td>
+                        Nullam quis risus eget urna mollis ornare vel eu leo
+                      </td>
+                      <td></td>
+                      <td>12 march</td>
+                    </tr>
+                    <tr class="unread checked">
+                      <td class="hidden-xs">
+                        <input type="checkbox" class="checkbox" />
+                      </td>
+                      <td class="hidden-xs">
+                        <i class="fa fa-star icon-state-warning"></i>
+                      </td>
+                      <td class="hidden-xs">Dropbox</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit
+                      </td>
+                      <td></td>
+                      <td>02 march</td>
+                    </tr>
+                    <tr class="unread checked">
+                      <td class="hidden-xs">
+                        <input type="checkbox" class="checkbox" />
+                      </td>
+                      <td class="hidden-xs">
+                        <i class="fa fa-star icon-state-warning"></i>
+                      </td>
+                      <td class="hidden-xs">Adobe</td>
+                      <td>
+                        Nullam quis risus eget urna mollis ornare vel eu leo
+                      </td>
+                      <td>
+                        <i class="fa fa-paperclip"></i>
+                      </td>
+                      <td>8 march</td>
+                    </tr>
+                    <tr class="unread checked">
+                      <td class="hidden-xs">
+                        <input type="checkbox" class="checkbox" />
+                      </td>
+                      <td class="hidden-xs">
+                        <i class="fa fa-star icon-state-warning"></i>
+                      </td>
+                      <td class="hidden-xs">Apple</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit
+                      </td>
+                      <td>
+                        <i class="fa fa-paperclip"></i>
+                      </td>
+                      <td>4 march</td>
+                    </tr>
+                    <tr class="read checked">
+                      <td class="hidden-xs">
+                        <input type="checkbox" class="checkbox" />
+                      </td>
+                      <td class="hidden-xs">
+                        <i class="fa-regular fa-star"></i>
+                      </td>
+                      <td class="hidden-xs">Microsoft</td>
+                      <td>
+                        Nullam quis risus eget urna mollis ornare vel eu leo
+                      </td>
+                      <td>
+                        <i class="fa fa-paperclip"></i>
+                      </td>
+                      <td>1 march</td>
+                    </tr>
+                    <tr class="read checked">
+                      <td class="hidden-xs">
+                        <input type="checkbox" class="checkbox" />
+                      </td>
+                      <td class="hidden-xs">
+                        <i class="fa fa-star"></i>
+                      </td>
+                      <td class="hidden-xs">Microsoft</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit
+                      </td>
+                      <td>
+                        <i class="fa fa-paperclip"></i>
+                      </td>
+                      <td>15 march</td>
+                    </tr>
+                    <tr class="read checked">
+                      <td class="hidden-xs">
+                        <input type="checkbox" class="checkbox" />
+                      </td>
+                      <td class="hidden-xs">
+                        <i class="fa fa-star"></i>
+                      </td>
+                      <td class="hidden-xs">Microsoft</td>
+                      <td>
+                        Nullam quis risus eget urna mollis ornare vel eu leo
+                      </td>
+                      <td></td>
+                      <td>16 march</td>
+                    </tr>
+                    <tr class="read checked">
+                      <td class="hidden-xs">
+                        <input type="checkbox" class="checkbox" />
+                      </td>
+                      <td class="hidden-xs">
+                        <i class="fa fa-star"></i>
+                      </td>
+                      <td class="hidden-xs">Microsoft</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit
+                      </td>
+                      <td>
+                        <i class="fa fa-paperclip"></i>
+                      </td>
+                      <td>9 march</td>
+                    </tr>
+                    <tr class="read checked">
+                      <td class="hidden-xs">
+                        <input type="checkbox" class="checkbox" />
+                      </td>
+                      <td class="hidden-xs">
+                        <i class="fa fa-star icon-state-warning"></i>
+                      </td>
+                      <td class="hidden-xs">Microsoft</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit
+                      </td>
+                      <td>
+                        <i class="fa fa-paperclip"></i>
+                      </td>
+                      <td>16 march</td>
+                    </tr>
+                    <tr class="read checked">
+                      <td class="hidden-xs">
+                        <input type="checkbox" class="checkbox" />
+                      </td>
+                      <td class="hidden-xs">
+                        <i class="fa fa-star icon-state-warning"></i>
+                      </td>
+                      <td class="hidden-xs">Dropbox</td>
+                      <td>
+                        Nullam quis risus eget urna mollis ornare vel eu leo
+                      </td>
+                      <td></td>
+                      <td>10 march</td>
+                    </tr>
+                    <tr class="read checked">
+                      <td class="hidden-xs">
+                        <input type="checkbox" class="checkbox" />
+                      </td>
+                      <td class="hidden-xs">
+                        <i class="fa fa-star"></i>
+                      </td>
+                      <td class="hidden-xs">Dropbox</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit
+                      </td>
+                      <td>
+                        <i class="fa fa-paperclip"></i>
+                      </td>
+                      <td>14 march</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                      <a class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>

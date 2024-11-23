@@ -48,8 +48,8 @@
                 </p>
             </div>
             <div class="col-md-6">
-                <p>Please note: all fields are required</p>
-                <form>
+                <p><em>Please note: all fields are required</em></p>
+                <form class="contact-form shadow-sm p-3">
                     <div class="mb-3">
                         <label for="firstname" class="form-label">First Name <span>*</span></label>
                         <input type="text" class="form-control" id="firstname" required>

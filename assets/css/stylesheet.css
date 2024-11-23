@@ -41,6 +41,12 @@ body {
 
 .text-danger{
     color: #f00;
+    font-size: 14px;
+}
+
+#success-msg{
+    margin-bottom: 10px;
+    color: forestgreen;
 }
 
 .social-icons div{
@@ -237,6 +243,7 @@ nav li {
     display: flex;
     align-items: center;
     gap: 15px;
+    cursor: pointer;
 }
 
 .buyserve:hover {
@@ -693,6 +700,22 @@ padding: 0 0 0 20px;
     flex-basis: 50%;
 }
 
+.form-group-double{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-group-double div{
+    width: 100%;
+}
+
+.form-group{
+    width: 100%;
+    
+}
+
 .contact-wrapper{
     background-color: var(--white);
     display: flex;
@@ -725,7 +748,7 @@ table{
     width: 97.5%;
     height: 150px;
     text-indent: 10px;
-    padding: 10px 0;
+    margin: 10px 0;
 }
 
 
@@ -951,3 +974,47 @@ border-radius: 7px;
     }
 
 }
+
+/* spinner style*/
+
+.spinner {
+    margin: 0 auto;
+    width: 70px;
+    text-align: center;
+  }
+  
+  .spinner > div {
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+  
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  }
+  
+  .spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  
+  .spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+  
+  @-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 40% { 
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
+  }

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/services-page.css">
     <link rel="stylesheet" href="assets/css/stylesheet.css">
-    
+    <link rel="stylesheet" href="./assets/css/contact.css" />
     
     <title><?= ucwords($page_name); ?> | Brandit</title>
 </head>
@@ -31,11 +31,11 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="./">Home</a></li>
-                    <li><a href="services.php">Services</a></li>
-                    <li><a href="./contact.php">Contact us</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="./admin.php">admin</a></li>
+                    <li><a href="./" class="<?= (str_contains($page_name, 'Home') ? 'active' : '')?>">Home</a></li>
+                    <li><a href="services.php" class="<?= (str_contains($page_name, 'service') ? 'active' : '')?>">Services</a></li>
+                    <li><a href="./contact.php" class="<?= (str_contains($page_name, 'contact') ? 'active' : '')?>">Contact us</a></li>
+                    <li><a href="./about.php" class="<?= (str_contains($page_name, 'about') ? 'active' : '')?>">About us</a></li>
+                    <li><a href="./admin.php" >admin</a></li>
                 </ul>
 
                 <ul class="membership">

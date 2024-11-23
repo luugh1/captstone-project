@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us | Talk to us at BrandIt</title>
-    <meta name="keywords" content="Easy Admin Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css" />
-    <link rel="stylesheet" href="./assets/fontawesome/css/brands.css" />
-    <link rel="stylesheet" href="./assets/fontawesome/css/solid.css" />
-    <link rel="stylesheet" href="./assets/fontawesome/css/regular.css" />
-    <link rel="stylesheet" href="./assets/css/contact.css" />
-
-</head>
 
 <?php require_once("component/header.php"); ?>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css");
+    </style>
+
+</svg>
+
 
 <main class="container-fluid">
     <section class="row mb-5">

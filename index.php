@@ -406,7 +406,16 @@
         </div>
     </div>
 </section>
-
+<div id="myModal" class="modal-brandit">
+            <div class="modal-content-brandit">
+              <span class="close">&times;</span>
+              <video id="myVideo" autoplay muted loop controls>
+                <source src="assets/video/AdobeStock_921126920_Video_HD_Preview.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+          </div>
+    </div>
 <?php include_once("component/footer.php"); ?>
-<script src="./assets/js/home-script.js"></script>
+<script type="module" src="./assets/js/home-script.js"></script>
 <script type="module" src="assets/js/contact-script.js"></script>

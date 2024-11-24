@@ -45,9 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
             validSumission = false;
         }
 
-        const inputs = form.querySelectorAll("input, textarea");
-        const errorMessages = form.querySelectorAll(".text-danger");
-
+    const inputs = form.querySelectorAll("input, textarea");
         // Add a mousedown event listener to each input field
         inputs.forEach((input) => {
             input.addEventListener("input", function () {

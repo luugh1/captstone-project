@@ -32,19 +32,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 				<div class="signin">
 
-					<form class="row g-3 mt-4">
+					<form id="login-form" class="row g-3 mt-4">
 
 						<div class="col-12">
-							<label for="inputAddress" class="form-label">First Name</label>
-							<input type="text" class="form-control" id="inputAddress" placeholder="John">
+							<label for="email" class="form-label">Email</label>
+							<input type="text" name="email" class="form-control" id="email" placeholder="example@gmail.com">
+							<span id="email-error" class="text-danger"></span>
 						</div>
 						<div class="col-12">
-							<label for="inputAddress" class="form-label">Last Name</label>
-							<input type="text" class="form-control" id="inputAddress" placeholder="Doe">
+							<label for="password" class="form-label">Password</label>
+							<input type="text" name="password" class="form-control" id="password" placeholder="******************">
+							<span id="password-error" class="text-danger"></span>
 						</div>
 
 						<div class="d-grid">
-							<button type="submit" class="btn submit-btn">Sign in</button>
+						<span id="success-msg"></span>
+							<button type="submit" class="btn submit-btn" id="login-btn">Sign in</button>
 						</div>
 
 						<div class="col-12">
@@ -55,7 +58,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</label>
 							</div>
 						</div>
-					</form>
+</form>
 				</div>
 			</div>
 			<div class="new_people">
@@ -72,9 +75,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 	</section>
-
+	<script type="module" src="./assets/js/login-script.js"></script>
 	<?php include_once("component/footer.php"); ?>
-
+	
 	<script src="./assets/js/backgrounds/three.min.js"></script>
 	<script src="./assets/js/backgrounds/vanta.net.min.js"></script>
 	<script>

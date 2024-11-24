@@ -21,11 +21,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body class="sign-in-up">
 <?php require_once("component/header.php"); ?>
-  <section class="page-wrapper">
+  <section class="page-wrapper" style="overflow: hidden">
     <h1>Welcome 👋to BranDit</h1>
     <p>Let's build together</p>
     <div class="sign-in-form">
-      <div class="sign-in-top-wrapper  p-4">
+      <div class="sign-in-top-wrapper shadow p-4">
         <div class="sign-in-form-top">
           <p><span>Sign Up to Brandit</p>
         </div>
@@ -97,8 +97,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
   <script src="./assets/js/backgrounds/three.min.js"></script>
   <script src="./assets/js/backgrounds/vanta.net.min.js"></script>
+  <script src="./assets/js/backgrounds/vanta.waves.min.js"></script>
+  <script src="./assets/js/backgrounds/vanta.birds.min.js"></script>
   <script>
-    VANTA.NET({
+
+    VANTA.BIRDS({
       el: ".page-wrapper",
       mouseControls: true,
       touchControls: true,
@@ -107,12 +110,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       minWidth: 200.00,
       scale: 1.00,
       scaleMobile: 1.00,
-      color: 0xb2beb5,
-      backgroundColor: 0xf6f6f6,
-      points: 20.00,
-      maxDistance: 28.00,
-      spacing: 20.00,
-      points: 20.00
+      backgroundColor: "#f1f1f1",
+      color1: "#35403a",
+      color2: "#ff6347",
+      colorMode: "lerp",
+      birdSize: 0.5,
+      quantity: 3.00,
+      backgroundAlpha: 0.38
     })
   </script>
   <script src="./assets/js/signup-script.js" type="module"></script>

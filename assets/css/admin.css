@@ -44,6 +44,11 @@ ul.sidebar-nav {
   position: relative;
 }
 
+.sidebar-nav li,
+.sidebar-nav li a span {
+  text-align: center;
+}
+
 .sidebar-nav li.active {
   background-color: var(--primary-color);
   color: var(--color-white);
@@ -68,11 +73,12 @@ ul.sidebar-nav {
   font-size: 1.5rem;
 }
 
-.logo {
+.logo a.logo-link {
   font-family: "Luckiest Guy", cursive;
   height: var(--header-height);
   width: 15.5rem;
   color: var(--primary-color);
+  text-decoration: none;
 }
 
 .logo span {
@@ -218,7 +224,7 @@ div[class^="col"].highlight::before {
   width: 100%;
   position: absolute;
   background-color: yellow;
-top: 0;
+  top: 0;
   right: 0;
   z-index: 1;
   opacity: 0.1;

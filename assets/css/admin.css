@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: #35403a;
+  --secondary-color: #4c594f;
+  --grey-brand: #bfbfb8;
+  --color-white: #f6f6f6;
+  --color-accent: tomato;
+  --header-height: 4rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+.sidebar {
+  background-color: var(--color-white);
+  height: calc(100vh - var(--header-height));
+}
+
+.main-content {
+  height: calc(100vh - 2 * 4.4rem);
+  overflow-y: auto;
+}
+
+ul.sidebar-nav {
+}
+
+.sidebar-nav li {
+}
+
+.sidebar-nav li,
+.sidebar-nav li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: inherit;
+  position: relative;
+}
+
+.sidebar-nav li,
+.sidebar-nav li a span {
+  text-align: center;
+}
+
+.sidebar-nav li.active {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+}
+
+.sidebar-nav li.active::before {
+  content: "";
+  display: block;
+  border-right: 12px solid var(--color-white);
+  border-bottom: 12px solid transparent;
+  border-top: 12px solid transparent;
+  position: absolute;
+  top: 33.33%;
+  right: -2px;
+}
+
+.sidebar-nav li a {
+  text-decoration: none;
+}
+
+.sidebar-nav i {
+  font-size: 1.5rem;
+}
+
+.logo a.logo-link {
+  font-family: "Luckiest Guy", cursive;
+  height: var(--header-height);
+  width: 15.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.logo span {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-accent);
+}
+
+header.main-header {
+  height: var(--header-height);
+}
+
+.sidebar-toggle {
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  height: 40px;
+  width: 40px;
+}
+
+.notification-btn {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.notification-btn .fa-solid {
+  font-size: 1.5rem;
+}
+
+.profile-picture {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: contain;
+}
+
+.label-widget {
+  position: relative;
+}
+
+.label-widget p {
+  padding: 30px 0;
+  color: tomato;
+}
+
+.label-name {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  padding: 5px 15px;
+  position: absolute;
+  top: 43%;
+  left: 8%;
+  width: 84%;
+}
+
+.label-value {
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 38px;
+  padding: 50px;
+  background-color: var(--color-white);
+  color: var(--primary-color);
+}
+
+.text-color-primary {
+  color: var(--primary-color);
+}
+
+.text-color-secondary {
+  color: var(--secondary-color);
+}
+
+.text-color-accent {
+  color: var(--color-accent);
+}
+
+.bg-color-primary {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+}
+
+.bg-color-secondary {
+  color: var(--color-white);
+  background-color: var(--secondary-color);
+}
+
+.bg-color-accent {
+  color: var(--color-white);
+  background-color: var(--color-accent);
+}
+
+.label-value-change-indicator {
+  font-size: 24px;
+}
+
+.label-value-change-indicator-down {
+  color: red;
+}
+
+.label-value-change-indicator-up {
+  color: green;
+}
+
+.line-chart-widget {
+  font-size: 12px;
+}
+
+.canvas-wrapper {
+  height: 200px;
+}
+
+footer {
+  height: var(--header-height);
+  background-color: var(--primary-color);
+  color: var(--color-white);
+}
+
+/* Scroll nicely */
+
+*,
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* Highlight */
+
+.row,
+div[class^="col"].highlight {
+  position: relative;
+}
+
+.row.highlight::before,
+div[class^="col"].highlight::before {
+  content: "";
+  font-size: 4rem;
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  display: block;
+  height: calc(100% + 10px);
+  width: 100%;
+  position: absolute;
+  background-color: yellow;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0.1;
+  transition: all 5s;
+}

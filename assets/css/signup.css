@@ -1,0 +1,228 @@
+:root {
+    --primary-color: #35403a;
+    --secondary-color: #4c594f;
+    --grey-brand: #bfbfb8;
+    --color-white: #f6f6f6;
+    --color-accent: #ff6347;
+    --header-height: 4rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Cabin', sans-serif;
+    font-size: 100%;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8)), url("../images/background/1.jpg");
+    background-position: left top;
+    background-size: contain;
+} */
+
+.page-wrapper {
+
+    display: flex;
+    justify-content: center;
+    min-height: calc(100% - var(--header-height));
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+
+.login-top {
+    padding: 15px;
+}
+
+.login-top-left {
+    float: left;
+}
+
+
+.login-top-right {
+    float: right;
+}
+
+.login-top-right li {
+    display: inline-block;
+    color: #222;
+}
+
+.login-top-right li a {
+    font-size: 18px;
+    color: #35AB7F;
+    margin: 0 10px;
+}
+
+.registration-form {
+    width: 370px;
+    margin: 100px auto;
+}
+
+
+
+
+.login-form-info p.for a {
+    color: #555;
+    font-weight: 300;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.login-form-info p.for a:hover {
+    text-decoration: none;
+}
+
+.new-people {
+    margin: 5em 0 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.new-people h3 {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.new-people p {
+    color: #666;
+    font-size: 14px;
+    margin: .5em 0 3em;
+}
+
+
+
+.sub-login-right {
+    float: right;
+}
+
+
+.sub-login-right p {
+    font-size: 16px;
+    color: #fff;
+    margin: 0.8em 0 0;
+}
+
+.sub-login-right p a {
+    color: #a88add;
+    padding-left: 8px;
+}
+
+.sub-login-right p a:hover {
+    color: #fff;
+}
+
+
+
+.sign-in-form {
+    min-height: calc(100% - var(--header-height));
+    width: 60vw;
+}
+
+.sign-in-wrapper {
+    background: #f9f9f9;
+}
+
+.new_people {
+    padding: 3em 0 0;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #f9f9f9;
+    margin-top: 24px;
+    padding-bottom: 10px;
+}
+
+.new_people h4 {
+    font-size: 2em;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.new_people p {
+    color: var(--grey-brand);
+    margin: 1em 0 2em;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+.new_people a {
+    padding: 12px 30px;
+    border: 1px solid var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+}
+
+.new_people a:hover {
+    color: var(--grey-brand);
+    
+}
+
+.sign-in-form-top {
+    display: block;
+    min-height: 150px;
+    padding: 3em 0 0;
+    text-align: center;
+    background-size: cover;
+    position: relative;
+    font-weight: 900;
+    background-image: linear-gradient(to right, rgba(53, 64, 58, 0.1), rgba(255, 99, 71, 0.4)), url(../images/background/3.jpg);
+
+}
+
+.sign-in-form-top p:first-of-type {
+    font-weight: 900;
+}
+
+.sign-in-top-wrapper {
+    background-color: #ffffff;
+    position: relative;
+}
+
+
+
+.sign-in-form-top p {
+    color: #fff;
+    margin: 0;
+    font-size: 2em;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+button.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+}
+
+button.submit-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--color-white);
+}
+
+@media only screen and (max-width: 700px) {
+    .sign-in-form {
+        width: 80vw;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .sign-in-form {
+        width: 60vw;
+    }
+}
+
+/* footer {
+    background-color: var(--primary-color);
+    height: var(--header-height);
+    color: var(--color-white);
+} */

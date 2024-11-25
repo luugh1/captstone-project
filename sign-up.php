@@ -32,35 +32,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
         <div class="signin">
 
-          <form class="row g-3 mt-4">
+          <form class="row g-3 mt-4" id="sign-up-form">
 
             <div class="col-6">
               <label for="inputAddress" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="John">
+              <input type="text" name="firstname" class="form-control" id="firstname" placeholder="John">
+              <span class="text-danger" id="firstname-error"></span>
             </div>
             <div class="col-6">
               <label for="inputAddress" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Doe">
+              <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Doe">
+              <span class="text-danger" id="lastname-error"></span>
             </div>
             <div class="col-12">
               <label for="inputAddress" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputAddress" placeholder="Doe">
+              <input type="email" name="email" class="form-control" id="email" placeholder="Doe">
+              <span class="text-danger" id="email-error"></span>
             </div>
             <div class="col-6">
               <label for="inputAddress" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputAddress" placeholder="Doe">
+              <input type="password" name="password" class="form-control" id="password" placeholder="Doe">
+              <span class="text-danger" id="password-error"></span>
             </div>
             <div class="col-6">
               <label for="inputAddress" class="form-label">Confirm Password</label>
-              <input type="password" class="form-control" id="inputAddress" placeholder="Doe">
+              <input type="password" name="verify_password" class="form-control" id="verify_password" placeholder="Doe">
+              <span class="text-danger" id="verify_password-error"></span>
             </div>
             <div class="col-12">
               <label for="inputAddress" class="form-label">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              <input type="text" name="address" class="form-control" id="address" placeholder="1234 Main St">
+              <span class="text-danger" id="address-error"></span>
             </div>
 
             <div class="d-grid">
-              <button type="submit" class="btn submit-btn">Sign in</button>
+              <button type="submit" class="btn submit-btn" id="contact-btn">Sign in</button>
             </div>
 
           </form>
@@ -81,7 +87,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
   </section>
 
-  
+  <div id="signModal" class="modal-brandit">
+            <div class="modal-content-brandit">
+              <span class="close">&times;</span>
+              <div id="message" class="g-message"></div>
+            </div>
+          </div>
+    </div>
 
   <script src="./assets/js/backgrounds/three.min.js"></script>
   <script src="./assets/js/backgrounds/vanta.net.min.js"></script>
@@ -107,4 +119,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       backgroundAlpha: 0.38
     })
   </script>
+  <script src="./assets/js/signup-script.js" type="module"></script>
   <?php include_once("component/footer.php"); ?>
